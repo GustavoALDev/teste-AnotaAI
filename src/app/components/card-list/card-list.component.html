@@ -1,0 +1,12 @@
+<main class="container-cards">
+  <div class="container-searchBar">
+    <app-search-bar (value)="serchCard($event)"></app-search-bar>
+  </div>
+  <div class="container-card-list" >
+
+    @for (card of cardList | async; track card.id) {
+      <app-card id="card" [card]="card" (deleteCardButton)="deleteCard($event)" ></app-card>
+    }
+
+  </div>
+</main>

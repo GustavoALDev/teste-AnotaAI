@@ -1,0 +1,124 @@
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px #cecece;
+  transition: transform 0.3s ease-in-out;
+
+  .delete-button {
+    display: inline-flex;
+    position: absolute;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid #cecece;
+    box-shadow: 0px 0px 2px gray;
+    background: #ffffff;
+    color: #737373;
+    transition: transform 0.3s ease-in-out;
+
+    svg{
+      width: 20px;
+    }
+  }
+
+  .container-card-img {
+    display: inline-flex;
+    position: relative;
+    height: 170px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    .type{
+      background: red;
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      padding: 1px;
+      padding-right: 5px;
+      padding-left: 5px;
+      border-radius: 5px;
+      p {
+          margin: 0;
+          font-size: 0.4rem;
+          font-weight: 600;
+          font-family: sans-serif;
+          color: white;
+      }
+    }
+
+  }
+
+  .container-title{
+
+    margin-left: 10px;
+    margin-top: 5px;
+
+    *{
+      margin: 0;
+    }
+
+    h4{
+      font-family: sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+  }
+
+  .container-description{
+    padding: 10px 15px;
+    *{
+      margin: 0;
+    }
+
+    p{
+      font-family: sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: start;
+
+      display: -webkit-box;
+      -webkit-line-clamp: 8;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.delete-button:hover{
+  transform: rotate(90deg) scale(1.2);
+  cursor: pointer;
+  border-color: black !important;
+  color: red !important;
+}
+
+#Paisagem {
+  background: blue;
+}
+
+#Flor{
+  background: red;
+}
+
+#Pizza {
+  background: #928a05;
+}

@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="delete-button" (click)="idCardEmitter(card.id)">
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+      <title>Close</title>
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+        d="M368 368L144 144M368 144L144 368" />
+    </svg>
+
+  </div>
+  <div class="container-card-img">
+    <img id="card-img" [src]="card.img" alt="Card-Image">
+    <div class="type" [id]="type[card.type]">
+      <p id="card-type">{{type[card.type]}}</p>
+    </div>
+  </div>
+
+  <div class="container-title">
+    <h4 id="card-title">{{card.title}} </h4>
+  </div>
+
+  <div class="container-description">
+    <p id="card-description" >{{card.description }}</p>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+.container-cards {
+  width: 100%;
+  height: 100%;
+  background: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container-searchBar{
+    width: 50%;
+    padding: 5px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 50px;
+  }
+
+  .container-card-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 96%;
+  }
+}
+
+#card {
+  flex: 0 0 15%;
+  min-width: 270px;
+  margin: 15px;
+}
